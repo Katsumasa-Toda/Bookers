@@ -1,0 +1,6 @@
+<h2>Title</h2>
+<p><%= @book.本のタイトル %></p>
+<h2>Body</h2>
+<p><%= @book.感想 %></p>
+<%= link_to "編集", edit_todolist_path(@book.id) %>
+<%= link_to "削除", destroy_todolist_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
